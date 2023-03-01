@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Firebase Practice</title>
+    <title>Document</title>
     <!-- FIREBASE -->
 
     <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
@@ -16,20 +15,16 @@
     <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-storage.js"></script>
 </head>
-
 <body>
-
-    <h1>Hello World</h1>
-    <input id="blogTitle" type="text"><br>
+    <h1>Login</h1>
+  
+    <input id="email" placeholder="email"><br>
     <br>
-    <textarea name="" id="blogDescription" cols="30" rows="10"></textarea>
-    <button onclick="addBlog()">Add Blog</button>
+    <input id="password" placeholder="Password"><br>
+    <br>
+    <button style="padding:10px;background-color:blue;color: #fff;" onclick="Login()">Login</button>
 
-
-
-    <script src="./api/firebase.js"></script>
-    <script src="./api/addblog.js"></script>
-
+<script src="/api/firebase.js"></script>
+<script src="/api/Login.js"></script>
 </body>
-
 </html>
