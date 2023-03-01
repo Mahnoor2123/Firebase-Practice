@@ -1,3 +1,7 @@
+let myId = localStorage.getItem('userId');
+
+console.log(myId);
+
 function addBlog() {
     let blogTitle = document.getElementById("blogTitle").value;
     let blogDescription = document.getElementById("blogDescription").value;
@@ -9,7 +13,9 @@ function addBlog() {
         let data = {
             blogTitle: blogTitle,
             blogDescription: blogDescription,
-            blogId: blogRef.id
+            blogId: blogRef.id,
+            userId: myId
+
         }
         blogRef.set(data).then(() => {
             window.alert('Blog Added Successfully');
