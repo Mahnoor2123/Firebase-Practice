@@ -25,7 +25,7 @@ function addBlog() {
             window.location.href = "../Home.html"
             localStorage.setItem('blogId');
 
-        }).catch((err) => {
+        }).catch((err) => { 
             window.alert(err.message);
         });
 
